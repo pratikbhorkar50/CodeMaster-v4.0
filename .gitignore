@@ -1,0 +1,30 @@
+*.class
+*.log
+*.msn
+*.mca
+*.bak
+.bsp
+
+# IDE specific
+.idea
+
+# sbt specific
+.cache
+.cache-main
+.classpath
+.project
+.history
+.lib/
+.settings/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Serverless directories
+.serverless
+/bin/
+logs/*
+/null
