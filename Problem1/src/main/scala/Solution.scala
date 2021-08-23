@@ -22,8 +22,9 @@ object Solution extends App {
       val somethings = line.split(" ").map(_.trim)
       val sol = (totalKM - somethings.head.toInt) / somethings.last.toInt
       sol
-    }).sum
-    val calc = totalKM.toDouble / blah.toDouble
+    }).max
+
+    val calc = BigDecimal(totalKM).setScale(6, BigDecimal.RoundingMode.HALF_UP).toDouble / BigDecimal(blah).setScale(6, BigDecimal.RoundingMode.HALF_UP).toDouble
     writer.write(s"Trip-$count: $calc\n")
   }
   writer.close()
