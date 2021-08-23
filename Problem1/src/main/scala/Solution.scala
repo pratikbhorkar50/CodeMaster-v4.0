@@ -5,7 +5,7 @@ import scala.io.Source
 
 object Solution extends App {
   val input = Source.fromResource("input.txt").getLines()
-  val writer = new PrintWriter(new File("output.txt"))
+  val writer = new PrintWriter(new File("Problem1_output.txt"))
 
   var remainingLines = input.drop(1).toList
   var count = 1
