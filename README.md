@@ -15,7 +15,7 @@ cd CodeMaster-v4.0\
 
 e.g. If Team Name = **'The Mighty Thor'**, then your branch name = **the_mighty_thor**
 
-Once your **Solution Code** and **output.txt** ready, keep both under folder either Problem1 or Problem2 (depends upon, which problem you choose to solve) then,
+Once your **Solution Code** and **ProblemX_output.txt** ready, keep both under folder either Problem1 or Problem2 (depends upon, which problem you choose to solve) then,
 
 2. Add all files for commit
 
