@@ -89,60 +89,82 @@ public class EscapeRoom {
 
 		List<Integer> keyArray = new ArrayList<Integer>();
 
-		while (str.length() > 0) {
+		boolean flag = false ;
+		
+		while (str.length() > 0 && !flag) {
 
-			while(str.indexOf("Z") >= 0 && str.indexOf("E") >= 0 && str.indexOf("R") >= 0 && str.indexOf("O") >= 0) {
-
-				str.deleteCharAt(str.indexOf("Z")).deleteCharAt(str.indexOf("E")).deleteCharAt(str.indexOf("R")).deleteCharAt(str.indexOf("O"));
-				keyArray.add(0);
-			}
-			while(str.indexOf("O") >= 0 && str.indexOf("N") >= 0 && str.indexOf("E") >= 0) {
-				str.deleteCharAt(str.indexOf("O")).deleteCharAt(str.indexOf("N")).deleteCharAt(str.indexOf("E"));
-				keyArray.add(1);
-			}
-			
-			while(str.indexOf("N") >= 0 && str.indexOf("I") >= 0 && str.indexOf("N", str.indexOf("N") + 1) >= 0 && str.indexOf("E") >= 0) {
+			if(str.indexOf("N") >= 0 && str.indexOf("I") >= 0 && str.indexOf("N", str.indexOf("N") + 1) >= 0 && str.indexOf("E") >= 0) {
 				str.deleteCharAt(str.indexOf("N")).deleteCharAt(str.indexOf("I")).deleteCharAt(str.indexOf("N")).deleteCharAt(str.indexOf("E"));
 				keyArray.add(9);
+				flag = true;
 			}
-			
-			while(str.indexOf("S") >= 0 && str.indexOf("I") >= 0 && str.indexOf("X") >= 0)
+
+			if(str.indexOf("Z") >= 0 && str.indexOf("E") >= 0 && str.indexOf("R") >= 0 && str.indexOf("O") >= 0) {
+				str.deleteCharAt(str.indexOf("Z")).deleteCharAt(str.indexOf("E")).deleteCharAt(str.indexOf("R")).deleteCharAt(str.indexOf("O"));
+				keyArray.add(0);
+				flag = true;
+			}
+			if(str.indexOf("O") >= 0 && str.indexOf("N") >= 0 && str.indexOf("E") >= 0) {
+				str.deleteCharAt(str.indexOf("O")).deleteCharAt(str.indexOf("N")).deleteCharAt(str.indexOf("E"));
+				keyArray.add(1);
+				flag = true;
+			}
+
+			if(str.indexOf("T") >= 0 && str.indexOf("W") >= 0 && str.indexOf("O") >= 0) {
+				str.deleteCharAt(str.indexOf("T")).deleteCharAt(str.indexOf("W")).deleteCharAt(str.indexOf("O"));
+				keyArray.add(2);
+				flag = true;
+			}
+
+
+			if(str.indexOf("T") >= 0 && str.indexOf("H") >= 0 && str.indexOf("R") >= 0 && str.indexOf("E") >= 0 && str.indexOf("E", str.indexOf("E") + 1) >= 0 ) {  
+				str.deleteCharAt(str.indexOf("T")).deleteCharAt(str.indexOf("H")).deleteCharAt(str.indexOf("R")).deleteCharAt(str.indexOf("E")).deleteCharAt(str.indexOf("E"));
+				keyArray.add(3);
+				flag = true;
+			}
+
+			if(str.indexOf("F") >= 0 && str.indexOf("O") >= 0 && str.indexOf("U") >= 0 && str.indexOf("R") >= 0 ) {
+				str.deleteCharAt(str.indexOf("F")).deleteCharAt(str.indexOf("O")).deleteCharAt(str.indexOf("U")).deleteCharAt(str.indexOf("R"));
+				keyArray.add(4);
+				flag = true;
+			}
+
+			if(str.indexOf("F") >= 0 && str.indexOf("I") >= 0 && str.indexOf("V") >= 0 && str.indexOf("E") >= 0 ) {
+				str.deleteCharAt(str.indexOf("F")).deleteCharAt(str.indexOf("I")).deleteCharAt(str.indexOf("V")).deleteCharAt(str.indexOf("E"));
+				keyArray.add(5);
+				flag = true;
+			}
+
+			if(str.indexOf("S") >= 0 && str.indexOf("I") >= 0 && str.indexOf("X") >= 0)
 			{
 				str.deleteCharAt(str.indexOf("S")).deleteCharAt(str.indexOf("I")).deleteCharAt(str.indexOf("X"));
 				keyArray.add(6);
+				flag = true;
 			}
 
-			while(str.indexOf("S") >= 0 && str.indexOf("E") >= 0 && str.indexOf("V") >= 0 && str.indexOf("E", str.indexOf("E") + 1) >= 0 && str.indexOf("N") >= 0 ) {
+			if(str.indexOf("S") >= 0 && str.indexOf("E") >= 0 && str.indexOf("V") >= 0 && str.indexOf("E", str.indexOf("E") + 1) >= 0 && str.indexOf("N") >= 0 ) {
 				str.deleteCharAt(str.indexOf("S")).deleteCharAt(str.indexOf("E")).deleteCharAt(str.indexOf("V")).deleteCharAt(str.indexOf("E")).deleteCharAt(str.indexOf("N"));
 				keyArray.add(7);
+				flag = true;
 			}
-			
-			while(str.indexOf("E") >= 0 && str.indexOf("I") >= 0 && str.indexOf("G") >= 0 && str.indexOf("H") >= 0 && str.indexOf("T") >= 0 ) {
+
+			if(str.indexOf("E") >= 0 && str.indexOf("I") >= 0 && str.indexOf("G") >= 0 && str.indexOf("H") >= 0 && str.indexOf("T") >= 0 ) {
 				str.deleteCharAt(str.indexOf("E")).deleteCharAt(str.indexOf("I")).deleteCharAt(str.indexOf("G")).deleteCharAt(str.indexOf("H")).deleteCharAt(str.indexOf("T"));
 				keyArray.add(8);
-			}
-			
-			while(str.indexOf("F") >= 0 && str.indexOf("O") >= 0 && str.indexOf("U") >= 0 && str.indexOf("R") >= 0 ) {
-				str.deleteCharAt(str.indexOf("F")).deleteCharAt(str.indexOf("O")).deleteCharAt(str.indexOf("U")).deleteCharAt(str.indexOf("R"));
-				keyArray.add(4);
+				flag = true;
 			}
 
-			while(str.indexOf("F") >= 0 && str.indexOf("I") >= 0 && str.indexOf("V") >= 0 && str.indexOf("E") >= 0 ) {
-				str.deleteCharAt(str.indexOf("F")).deleteCharAt(str.indexOf("I")).deleteCharAt(str.indexOf("V")).deleteCharAt(str.indexOf("E"));
-				keyArray.add(5);
-			}
-			
-			while(str.indexOf("T") >= 0 && str.indexOf("W") >= 0 && str.indexOf("O") >= 0) {
-				str.deleteCharAt(str.indexOf("T")).deleteCharAt(str.indexOf("W")).deleteCharAt(str.indexOf("O"));
-				keyArray.add(2);
+			if(str.indexOf("N") >= 0 && str.indexOf("I") >= 0 && str.indexOf("N", str.indexOf("N") + 1) >= 0 && str.indexOf("E") >= 0) {
+				str.deleteCharAt(str.indexOf("N")).deleteCharAt(str.indexOf("I")).deleteCharAt(str.indexOf("N")).deleteCharAt(str.indexOf("E"));
+				keyArray.add(9);
+				flag = true;
 			}
 
-		
-			while(str.indexOf("T") >= 0 && str.indexOf("H") >= 0 && str.indexOf("R") >= 0 && str.indexOf("E") >= 0 && str.indexOf("E", str.indexOf("E") + 1) >= 0 ) {  
-				str.deleteCharAt(str.indexOf("T")).deleteCharAt(str.indexOf("H")).deleteCharAt(str.indexOf("R")).deleteCharAt(str.indexOf("E")).deleteCharAt(str.indexOf("E"));
-				keyArray.add(3);
+			if(flag == false ) {
+				break;
+			} else {
+				flag = false;
 			}
-			
 		}
 
 		Collections.sort(keyArray);
