@@ -27,21 +27,6 @@ public class ProblemSolver {
 	private static final String[] allowedStringsArr = { "ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN",
 			"EIGHT", "NINE" };
 
-//	private static final Map<String, Integer> standardNumString = new HashMap<>();
-//
-//	static {
-//		standardNumString.put("ZERO", 4);
-//		standardNumString.put("ONE", 3);
-//		standardNumString.put("TWO", 3);
-//		standardNumString.put("THREE", 5);
-//		standardNumString.put("FOUR", 4);
-//		standardNumString.put("FIVE", 4);
-//		standardNumString.put("SIX", 3);
-//		standardNumString.put("SEVEN", 5);
-//		standardNumString.put("EIGHT", 5);
-//		standardNumString.put("NINE", 4);
-//	}
-
 	public static void main(String[] args) {
 		List<String> inputList = readFileInList(inputFileName);
 		List<String> outputList = new ArrayList<>();
@@ -100,10 +85,6 @@ public class ProblemSolver {
 				obtainedValidNumStrings.add(standardKey);
 			}
 		}
-
-//		obtainedValidNumStrings.add("ONE");
-//		obtainedValidNumStrings.add("NINE");
-//		obtainedValidNumStrings.add("EIGHT");
 
 		// convert the words to number
 		List<Integer> convertedValidNumbers = new ArrayList<>();
