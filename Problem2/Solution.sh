@@ -140,7 +140,7 @@ while read line; do
     fi
     
     export key=`sort $tempLine | tr -d '\n'`
-    echo "Room-$count: $key" >> Problem2_output2.txt
+    echo "Room-$count: $key" >> Problem2_output.txt
     count=`expr $count + 1`
 done <$inputFile
 
