@@ -1,0 +1,14 @@
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\bin\Debug\netcoreapp3.1\CodeMaster.exe
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\bin\Debug\netcoreapp3.1\CodeMaster.deps.json
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\bin\Debug\netcoreapp3.1\CodeMaster.runtimeconfig.json
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\bin\Debug\netcoreapp3.1\CodeMaster.runtimeconfig.dev.json
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\bin\Debug\netcoreapp3.1\CodeMaster.dll
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\bin\Debug\netcoreapp3.1\CodeMaster.pdb
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.csproj.AssemblyReference.cache
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.AssemblyInfoInputs.cache
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.AssemblyInfo.cs
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.csproj.CoreCompileInputs.cache
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.dll
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.pdb
+C:\Users\a702852\source\repos\CodeMaster\CodeMaster\obj\Debug\netcoreapp3.1\CodeMaster.genruntimeconfig.cache
