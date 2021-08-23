@@ -16,11 +16,11 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ProblemSolver {
-//	private static final String inputFileName = "src/resources/Problem2_input.txt";
-//	private static final String outputFileName = "src/resources/Problem2_output.txt";
+	private static final String inputFileName = "src/resources/Problem2_input.txt";
+	private static final String outputFileName = "src/resources/Problem2_output.txt";
 
-	private static final String inputFileName = "src/resources/Input.txt";
-	private static final String outputFileName = "src/resources/Output.txt";
+//	private static final String inputFileName = "src/resources/Input.txt";
+//	private static final String outputFileName = "src/resources/Output.txt";
 
 	private static final List<String> allowedStringsLst = Arrays.asList("ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE",
 			"SIX", "SEVEN", "EIGHT", "NINE");
