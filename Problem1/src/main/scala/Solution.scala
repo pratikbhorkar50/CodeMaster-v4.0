@@ -24,8 +24,8 @@ object Solution extends App {
       sol
     }).max
 
-    val calc = BigDecimal(totalKM).setScale(6, BigDecimal.RoundingMode.HALF_UP).toDouble / BigDecimal(blah).setScale(6, BigDecimal.RoundingMode.HALF_UP).toDouble
-    writer.write(s"Trip-$count: $calc\n")
+    val calc = if (blah == 0) totalKM.toDouble else totalKM.toDouble / blah.toDouble
+    writer.write(s"Trip-$count: ${BigDecimal(calc).setScale(6, BigDecimal.RoundingMode.HALF_UP).toDouble}\n")
   }
   writer.close()
 }
